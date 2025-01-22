@@ -1,0 +1,61 @@
+@tailwind base;
+
+@layer base {
+  h5 {
+    @apply lg:text-[18pt];
+  }
+}
+@tailwind components;
+@tailwind utilities;
+
+.embla__viewport {
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+}
+.embla__slide {
+  flex: 0 0 100%;
+  min-width: 0;
+}
+
+body {
+  @apply bg-gradient-to-tl from-[#0f0c29] via-[#302b63] to-[#24243e] text-white;
+}
+
+.gradient-text {
+  @apply mx-auto bg-gradient-to-tr from-[#696eff] to-[#f8acff] bg-clip-text text-transparent;
+}
+
+.item-container {
+  @apply flex flex-col items-center justify-center space-y-0 text-center w-full;
+}
+
+.product-container {
+  @apply flex flex-col items-center justify-between space-y-10 lg:space-x-10 text-center w-full lg:flex-row lg:space-y-0;
+}
+
+.feature-desc {
+  @apply text-xl font-semibold lg:text-3xl;
+}
+
+.image-wrapper {
+  @apply flex md:size-64 lg:size-72 cursor-pointer;
+}
+
+.item-title {
+  @apply text-3xl font-semibold w-full;
+}
+
+.ficon:hover {
+  filter: brightness(0) saturate(100%) invert(73%) sepia(9%) saturate(3228%)
+    hue-rotate(163deg) brightness(101%) contrast(101%);
+}
+
+.btn-green {
+  @apply px-10 py-2 my-0 font-bold tracking-widest rounded-lg uppercase border-2 border-green-600 bg-green-600 hover:bg-green-500 hover:text-white;
+}
+
+.btn-orange {
+  @apply px-10 py-2 my-0 font-bold tracking-widest rounded-lg uppercase border-2 border-orange-600 bg-orange-600 hover:bg-orange-500 hover:text-white;
+}

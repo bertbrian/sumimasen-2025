@@ -1,0 +1,30 @@
+{
+  "name": "sumimasen-2025",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev & npx next-video sync -w",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@headlessui/react": "^2.2.0",
+    "@heroicons/react": "^2.2.0",
+    "date-fns": "^4.1.0",
+    "embla-carousel-autoplay": "^8.5.2",
+    "embla-carousel-react": "^8.5.2",
+    "hamburger-react": "^2.5.2",
+    "next": "14.2.23",
+    "next-auth": "^5.0.0-beta.25",
+    "next-video": "^2.0.0",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "eslint": "^8",
+    "eslint-config-next": "14.2.23",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1"
+  }
+}
