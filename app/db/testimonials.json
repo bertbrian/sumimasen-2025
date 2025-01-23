@@ -1,0 +1,27 @@
+[
+  {
+    "description": "ini 123",
+    "name": "albert",
+    "rate": 1
+  },
+  {
+    "description": "ini deskr345ipsi",
+    "name": "albert",
+    "rate": 2
+  },
+  {
+    "description": "ini deskr456ipsi",
+    "name": "albert",
+    "rate": 3
+  },
+  {
+    "description": "ini deskri567psi",
+    "name": "albert",
+    "rate": 4
+  },
+  {
+    "description": "ini deskr678ipsi",
+    "name": "albert",
+    "rate": 5
+  }
+]

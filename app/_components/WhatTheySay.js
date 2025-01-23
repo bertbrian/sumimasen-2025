@@ -1,22 +1,25 @@
-import TestiCarousel from "./TestiCarousel";
+import testimonials from "@/app/db/testimonials.json";
+import TestiCard from "./TestiCard";
+import test from "node:test";
 
 export default function WhatTheySay() {
   return (
-    <section id="whattheysay">
-      <h3 className="text-center text-4xl font-semibold lg:text-6xl">
+    <section id="products">
+      {/* <h3 className="text-center text-4xl font-semibold lg:text-6xl">
         What they say
-      </h3>
-
-      <TestiCarousel />
+      </h3> */}
 
       <div className="slider">
         <div className="list">
           <div className="item">
-            <b>
-              awalnya beli krna kemasanny lucu aesthetic bgtt tp wlaupun tipis
-              ternyt super fleksibel bgtt
-            </b>
-            <p>- j****e</p>
+            {testimonials.map((testi) => (
+              <TestiCard
+                key={testi.name}
+                name={testi.name}
+                description={testi.description}
+                rate={testi.rate}
+              />
+            ))}
           </div>
         </div>
       </div>

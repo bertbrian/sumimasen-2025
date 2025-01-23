@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Whatsapp",
+    "href": "https://wa.me/+6285179686686",
+    "src": "/footer/icon-whatsapp.svg"
+  },
+  {
+    "name": "X",
+    "href": "https://x.com/sumimasen_id",
+    "src": "/footer/icon-twitter.svg"
+  },
+  {
+    "name": "Lazada",
+    "href": "https://s.lazada.co.id/s.wR7pu",
+    "src": "/footer/icon-lazada.webp"
+  },
+  {
+    "name": "Tik Tok",
+    "href": "https://tiktok.com/@sumimasen_id",
+    "src": "/footer/icon-tiktok.svg"
+  },
+  {
+    "name": "shopee",
+    "href": "https://s.shopee.co.id/AKGSwFHnL3",
+    "src": "/footer/iconShopee.svg"
+  },
+  {
+    "name": "Instagram",
+    "href": "https://www.instagram.com/sumimasen_id",
+    "src": "/footer/icon-instagram.svg"
+  }
+]

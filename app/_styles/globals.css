@@ -48,8 +48,8 @@ body {
 }
 
 .ficon:hover {
-  filter: brightness(0) saturate(100%) invert(73%) sepia(9%) saturate(3228%)
-    hue-rotate(163deg) brightness(101%) contrast(101%);
+  filter: brightness(0) saturate(100%) invert(67%) sepia(28%) saturate(5662%)
+    hue-rotate(213deg) brightness(100%) contrast(97%);
 }
 
 .btn-green {

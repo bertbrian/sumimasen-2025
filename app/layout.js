@@ -20,7 +20,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${montserrat.variable}`}>
+    <html lang="en" className={`${montserrat.variable} scroll-smooth`}>
       <body className="antialiased overflow-x-hidden min-h-screen font-sans grid grid-rows-[auto_1fr_auto]">
         <Header />
         <main>{children}</main>

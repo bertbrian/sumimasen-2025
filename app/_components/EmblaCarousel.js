@@ -26,11 +26,8 @@ export default function EmblaCarousel({ children }) {
   return (
     <>
       {children}
-      <div className="embla">
-        <div
-          className="embla__viewport mx-auto mt-12 h-56 max-w-sm flex"
-          ref={emblaRef}
-        >
+      <div id="products" className="embla">
+        <div className="embla__viewport max-w-sm mx-auto" ref={emblaRef}>
           <div className="embla__container h-full">
             <div className="embla__slide">
               <Image

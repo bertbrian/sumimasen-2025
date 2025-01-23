@@ -1,26 +1,37 @@
-import Image from "next/image";
 import Link from "next/link";
-import { auth } from "../_lib/auth";
 
-export default async function Navigation() {
-  const session = await auth();
-  console.log(session);
+const navLinks = [
+  {
+    name: "Products",
+    href: "/#products",
+  },
+  {
+    name: "About us",
+    href: "/aboutus",
+  },
+  {
+    name: "Certification",
+    href: "/certification",
+  },
+  {
+    name: "Fun walk",
+    href: "/funwalk",
+  },
+];
 
+export default function Navigation() {
   return (
     <div className="hidden items-center space-x-8 uppercase lg:flex">
-      <Link href="./products" className="tracking-widest hover:text-blue-300">
-        Products
-      </Link>
-      <Link href="./aboutus" className="tracking-widest hover:text-blue-300">
-        About us
-      </Link>
-      <a href="./certification" className="tracking-widest hover:text-blue-300">
-        Certification
-      </a>
-      <Link href="./funwalk" className="tracking-widest hover:text-blue-300">
-        Fun Walk
-      </Link>
-      {session?.user?.image ? (
+      {navLinks.map((link) => (
+        <Link
+          key={link.name}
+          href={link.href}
+          className="tracking-widest hover:text-violet-400"
+        >
+          <span>{link.name}</span>
+        </Link>
+      ))}
+      {/* {session?.user?.image ? (
         <Link
           href="./account"
           className="flex gap-2 items-center tracking-widest hover:text-blue-300"
@@ -37,7 +48,7 @@ export default async function Navigation() {
         <Link href="./account" className="tracking-widest hover:text-blue-300">
           Account
         </Link>
-      )}
+      )} */}
       <Link
         href="https://wa.me/+6285179686686?text=Hai%20sumin%2C%20saya%20tertarik%20menjadi%20Reseller%2C%20apa%20saja%20syaratnya%3F%3F"
         target="_blank"

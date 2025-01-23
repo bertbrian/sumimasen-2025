@@ -11,7 +11,7 @@ export default function HamburgerMenuLists({ toggled, toggle, onclicklink }) {
     },
     {
       name: "Products",
-      href: "/products",
+      href: "/#products",
     },
     {
       name: "About Us",
@@ -24,7 +24,7 @@ export default function HamburgerMenuLists({ toggled, toggle, onclicklink }) {
   ];
 
   return (
-    <nav className="fixed top-0 right-0 w-screen pt-10 h-screen z-10 bg-purple-900/30 backdrop-blur-2xl">
+    <nav className="fixed top-0 right-0 w-screen pt-10 h-screen z-10 bg-slate-600/65 backdrop-blur-2xl rounded-md ">
       <ul className="flex flex-col items-center justify-center w-full space-y-6 font-bold text-white rounded-sm">
         <li className="absolute top-8 right-4">
           <Hamburger size={30} toggled={toggled} toggle={toggle} />

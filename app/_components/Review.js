@@ -1,6 +1,8 @@
 import Video from "next-video";
 import sumimasen_video from "/videos/sumimasen_video.mp4";
 
+const Testimonies = [{}];
+
 export default function Review() {
   return (
     <section id="review">
