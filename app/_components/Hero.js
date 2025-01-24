@@ -5,7 +5,7 @@ import EmblaCarousel from "./EmblaCarousel";
 export default function Hero() {
   return (
     <section id="hero">
-      <div className="max-w-7xl flex flex-col mx-auto md:flex-row md:justify-around md:p-6 md:mb-20 md:mt-16">
+      <div className="max-w-7xl flex flex-col mx-auto md:flex-row md:justify-around md:p-6 md:mb-20 md:mt-16 ">
         <div>
           <Image
             src={logoText}
