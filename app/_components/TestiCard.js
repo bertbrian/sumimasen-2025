@@ -1,9 +1,9 @@
-function TestiCard({ description, name, rate }) {
+import Image from "next/image";
+
+function TestiCard({ src }) {
   return (
-    <div>
-      <b>{description}</b>
-      <p>{name}</p>
-      <p>{rate} stars</p>
+    <div className="border relative overflow-hidden min-h-[200px] min-w-[400px] rounded flex justify-center items-center">
+      <Image src={src} alt={src} fill className="rounded object-contain" />
     </div>
   );
 }

@@ -24,7 +24,7 @@ export default function Page() {
             with reliable protection and peace of mind.
           </p>
           <div className="relative size-[50%] lg:size-1/4">
-            <Image src={mascotHi} alt="mascott-hi" />
+            <Image src={mascotHi} alt="mascott-hi" placeholder="blur" />
           </div>
         </div>
       </div>
@@ -36,7 +36,7 @@ export default function Page() {
 
         <div className="flex flex-col-reverse space-y-4 space-y-reverse lg:flex-row lg:space-y-0 items-center pt-6 leading-relaxed">
           <div className="hidden relative lg:flex lg:size-1/4 size-20">
-            <Image src={mascotStrong} alt="mascott-strong" />
+            <Image src={mascotStrong} alt="mascott-strong" placeholder="blur" />
           </div>
           <p className="text-lg text-center lg:leading-normal w-full px-4 lg:text-justify lg:px-0 lg:m-0 lg:w-full lg:text-xl">
             to empower individuals to make informed choices about their sexual

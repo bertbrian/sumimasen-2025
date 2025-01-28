@@ -1,27 +1,54 @@
 [
   {
-    "description": "ini 123",
-    "name": "albert",
-    "rate": 1
+    "src": "/testimoni/1.jpg",
+    "index": 1
   },
   {
-    "description": "ini deskr345ipsi",
-    "name": "albert",
-    "rate": 2
+    "src": "/testimoni/2.jpg",
+    "index": 2
   },
   {
-    "description": "ini deskr456ipsi",
-    "name": "albert",
-    "rate": 3
+    "src": "/testimoni/3.jpg",
+    "index": 3
   },
   {
-    "description": "ini deskri567psi",
-    "name": "albert",
-    "rate": 4
+    "src": "/testimoni/4.jpg",
+    "index": 4
   },
   {
-    "description": "ini deskr678ipsi",
-    "name": "albert",
-    "rate": 5
+    "src": "/testimoni/5.jpg",
+    "index": 5
+  },
+  {
+    "src": "/testimoni/6.jpg",
+    "index": 6
+  },
+  {
+    "src": "/testimoni/7.jpg",
+    "index": 7
+  },
+  {
+    "src": "/testimoni/8.jpg",
+    "index": 8
+  },
+  {
+    "src": "/testimoni/9.jpg",
+    "index": 9
+  },
+  {
+    "src": "/testimoni/10.jpg",
+    "index": 10
+  },
+  {
+    "src": "/testimoni/11.jpg",
+    "index": 11
+  },
+  {
+    "src": "/testimoni/12.jpg",
+    "index": 12
+  },
+  {
+    "src": "/testimoni/13.jpg",
+    "index": 13
   }
 ]

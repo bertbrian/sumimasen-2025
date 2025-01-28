@@ -1,3 +1,4 @@
+"use ";
 import Features from "./_components/Features";
 import Hero from "./_components/Hero";
 
@@ -9,10 +10,9 @@ export default function Page() {
   return (
     <>
       <Hero />
-      <Features />
       {/* <Review /> */}
+      <Features />
       <WhatTheySay />
-      <Partner />
     </>
   );
 }
