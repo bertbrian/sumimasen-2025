@@ -1,15 +1,14 @@
 "use client";
-
 import testimonials from "@/app/db/testimonials.json";
 import TestiCard from "./TestiCard";
+import useMeasure from "react-use-measure";
+import { useEffect } from "react";
 import {
   motion,
   animate,
   AnimatePresence,
   useMotionValue,
 } from "framer-motion";
-import useMeasure from "react-use-measure";
-import { useEffect } from "react";
 
 export default function WhatTheySay() {
   let [ref, { width }] = useMeasure();
@@ -21,7 +20,7 @@ export default function WhatTheySay() {
 
     controls = animate(xTranslation, [0, finalPosition], {
       ease: "linear",
-      duration: 15,
+      duration: 50,
       repeat: Infinity,
       repeatType: "loop",
       repeatDelay: 0,
@@ -29,17 +28,17 @@ export default function WhatTheySay() {
 
     return controls.stop;
   }, [xTranslation, width]);
-
   return (
     <section id="products">
       {/* <h3 className="text-center text-4xl font-semibold lg:text-6xl">
         What they say
       </h3> */}
-      <AnimatePresence>
-        <div>
-          <div className="max-w-7xl  mx-auto rounded-md">
+
+      <div>
+        <div className="mx-auto max-w-7xl rounded-md overflow-hidden">
+          <div className="relative h-64 reviews-box">
             <motion.div
-              className="flex gap-4 "
+              className="absolute left-0 flex gap-4"
               ref={ref}
               style={{ x: xTranslation }}
             >
@@ -49,7 +48,7 @@ export default function WhatTheySay() {
             </motion.div>
           </div>
         </div>
-      </AnimatePresence>
+      </div>
     </section>
   );
 }

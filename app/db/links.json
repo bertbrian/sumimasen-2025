@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Tokopedia",
+    "url": "https://www.tokopedia.com/sumimasen-indonesia",
+    "icon": "/tokpedIcon.png"
+  },
+  {
+    "name": "Shopee",
+    "url": "https://s.shopee.co.id/AKGSwFHnL3",
+    "icon": "/shopeeIcon.png"
+  },
+  {
+    "name": "Lazada",
+    "url": "https://s.lazada.co.id/s.wR7pu",
+    "icon": "/lazadaIcon.png"
+  }
+]

@@ -12,7 +12,7 @@ export const metadata = {
 export default function Page() {
   return (
     <section id="aboutus" className="pt-4 lg:pt-12">
-      <div className="container mx-auto px-6 lg:space-y-0">
+      <div className="container mx-auto px-6 lg:space-y-0 pb-8">
         <h3 className="text-center text-4xl font-semibold lg:text-6xl">
           About Us
         </h3>
@@ -33,7 +33,6 @@ export default function Page() {
         <h3 className="text-center text-4xl font-semibold lg:text-6xl">
           Mission
         </h3>
-
         <div className="flex flex-col-reverse space-y-4 space-y-reverse lg:flex-row lg:space-y-0 items-center pt-6 leading-relaxed">
           <div className="hidden relative lg:flex lg:size-1/4 size-20">
             <Image src={mascotStrong} alt="mascott-strong" placeholder="blur" />
@@ -58,7 +57,7 @@ export default function Page() {
         </div>
       </div>
 
-      <div className="container mx-auto px-8 flex flex-col-reverse items-center space-y-8 space-y-reverse text-center lg:text-left lg:text-2xl lg:flex-col lg:space-y-4 lg:items-start py-6 text-lg">
+      <div className="container mx-auto px-8 flex flex-col-reverse items-center space-y-8 space-y-reverse text-center lg:text-left lg:text-2xl lg:flex-col lg:space-y-4 lg:items-start py-20 text-lg">
         <div className="flex flex-col justify-center items-center space-y-4 lg:flex-row lg:space-y-0 lg:space-x-3">
           <MapPinIcon className="w-[30px]" />
           <p>Jakarta, Indonesia</p>
