@@ -7,10 +7,10 @@ function Logo() {
     <Link href="/" className="flex items-center gap-4">
       <Image
         src={logo}
-        width="70"
-        height="70"
+        width={70}
+        height={70}
+        quality={80}
         alt="Yuta - Sumimasen Mascot"
-        className="object-cover"
       />
     </Link>
   );

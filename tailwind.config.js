@@ -16,10 +16,6 @@ module.exports = {
       fontFamily: {
         sans: ["var(--font-montserrat)"],
       },
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-      },
     },
   },
   plugins: [],
