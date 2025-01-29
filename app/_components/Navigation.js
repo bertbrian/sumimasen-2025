@@ -1,4 +1,6 @@
+import Image from "next/image";
 import Link from "next/link";
+import { auth } from "../_lib/auth";
 
 const navLinks = [
   {
@@ -19,7 +21,9 @@ const navLinks = [
   },
 ];
 
-export default function Navigation() {
+export default async function Navigation() {
+  const session = await auth();
+
   return (
     <div className="hidden items-center space-x-8 uppercase lg:flex">
       {navLinks.map((link) => (
@@ -31,7 +35,7 @@ export default function Navigation() {
           <span>{link.name}</span>
         </Link>
       ))}
-      {/* {session?.user?.image ? (
+      {session?.user?.image ? (
         <Link
           href="./account"
           className="flex gap-2 items-center tracking-widest hover:text-blue-300"
@@ -40,6 +44,8 @@ export default function Navigation() {
             className="size-8 rounded-full"
             src={session.user.image}
             alt={session.user.name}
+            width={80}
+            height={80}
             referrerPolicy="no-referrer"
           />
           <span>{session.user.name}</span>
@@ -48,7 +54,7 @@ export default function Navigation() {
         <Link href="./account" className="tracking-widest hover:text-blue-300">
           Account
         </Link>
-      )} */}
+      )}
       <Link
         href="https://wa.me/+6285179686686?text=Hai%20sumin%2C%20saya%20tertarik%20menjadi%20Reseller%2C%20apa%20saja%20syaratnya%3F%3F"
         target="_blank"

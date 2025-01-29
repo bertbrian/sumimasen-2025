@@ -17,7 +17,7 @@ const navLinks = [
   },
   {
     name: "Print Receipt",
-    href: "/account/reservations",
+    href: "/account/printbill",
     icon: <CalendarDaysIcon className="h-5 w-5 text-primary-600" />,
   },
   {
