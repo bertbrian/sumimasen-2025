@@ -1,15 +1,13 @@
-import { getProducts } from "../_lib/data-service";
+"use client";
 
-export const metadata = {
-  title: "Products",
-};
+import Mansonry from "@/app/_components/Mansonry";
 
-export default async function Page() {
-  const products = await getProducts();
+export default function Page() {
+  // const products = await getProducts();
 
   return (
     <div>
-      {products.length > 0 && (
+      {/* {products.length > 0 && (
         <div>
           {products.map((item) => (
             <span key={item.name}>
@@ -17,7 +15,8 @@ export default async function Page() {
             </span>
           ))}
         </div>
-      )}
+      )} */}
+      <Mansonry />
     </div>
   );
 }
