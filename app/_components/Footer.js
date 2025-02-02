@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <footer className="py-6">
       {/*<!-- Footer Flex Container -->*/}
-      <div className="container flex flex-col items-center justify-between mx-auto space-y-16 px-6 md:flex-row md:space-y-0">
+      <div className="max-w-7xl flex flex-col items-center justify-between mx-auto space-y-16 md:flex-row md:space-y-0">
         {/*<!-- Social Container -->*/}
         <div className="flex space-x-10">
           {footerLogos.map((icon) => (
