@@ -51,18 +51,23 @@ export default async function Navigation() {
           <span>{session.user.name}</span>
         </Link>
       ) : (
-        <Link href="./account" className="tracking-widest hover:text-blue-300">
+        <Link
+          href="./account"
+          className="tracking-widest hover:text-blue-300 hidden"
+        >
           Account
         </Link>
       )}
-      <Link
-        href="https://wa.me/+6285179686686?text=Hai%20sumin%2C%20saya%20tertarik%20menjadi%20Reseller%2C%20apa%20saja%20syaratnya%3F%3F"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="w-48 text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-green-300 shadow-lg shadow-green-500/50 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2"
-      >
-        Open Reseller
-      </Link>
+      {!session?.user && (
+        <Link
+          href="https://wa.me/+6285179686686?text=Hai%20sumin%2C%20saya%20tertarik%20menjadi%20Reseller%2C%20apa%20saja%20syaratnya%3F%3F"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="w-48 text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-green-300 shadow-lg shadow-green-500/50 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2"
+        >
+          Open Reseller
+        </Link>
+      )}
     </div>
   );
 }

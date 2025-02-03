@@ -1,5 +1,6 @@
 import NextAuth from "next-auth";
 import Google from "next-auth/providers/google";
+import { checkAdmin } from "./data-service";
 
 const authConfig = {
   providers: [
@@ -9,9 +10,12 @@ const authConfig = {
     }),
   ],
   callbacks: {
-    authorized({ auth, request }) {
+    async authorized({ auth, request }) {
       //if auth.user exist === true, else false shortcut below
-      return !!auth?.user;
+      const existingAdmin = await checkAdmin(auth?.user.email);
+      if (!auth?.user || !existingAdmin) return false;
+
+      return true;
     },
   },
   pages: {

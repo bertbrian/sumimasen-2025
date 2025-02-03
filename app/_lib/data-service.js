@@ -2,6 +2,36 @@ import { eachDayOfInterval } from "date-fns";
 import { supabase } from "./supabase.js";
 import { notFound } from "next/navigation.js";
 
+////////////////////
+//ON USED
+
+//1. Get Products data details
+export const getProducts = async function () {
+  const { data, error } = await supabase
+    .from("products")
+    .select("*")
+    .order("id");
+  console.log(data);
+  if (error) {
+    console.error(error);
+    notFound();
+  }
+
+  return data;
+};
+
+//2. Check if email is Admin's email
+export async function checkAdmin(email) {
+  const { data, error } = await supabase
+    .from("admin")
+    .select("*")
+    .eq("email", email)
+    .single();
+
+  // No error here! We handle the possibility of no guest in the sign in callback
+  return data;
+}
+
 /////////////
 // GET
 
@@ -33,32 +63,6 @@ export async function getCabinPrice(id) {
     console.error(error);
   }
 
-  return data;
-}
-
-export const getProducts = async function () {
-  const { data, error } = await supabase
-    .from("products")
-    .select("*")
-    .order("id");
-  console.log(data);
-  if (error) {
-    console.error(error);
-    notFound();
-  }
-
-  return data;
-};
-
-// Guests are uniquely identified by their email address
-export async function getGuest(email) {
-  const { data, error } = await supabase
-    .from("guests")
-    .select("*")
-    .eq("email", email)
-    .single();
-
-  // No error here! We handle the possibility of no guest in the sign in callback
   return data;
 }
 
