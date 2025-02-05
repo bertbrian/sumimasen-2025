@@ -11,20 +11,22 @@ const authConfig = {
     }),
   ],
   callbacks: {
-    authorized({ auth, request }) {
-      return !!auth?.user;
-    },
     async signIn({ user, account, profile }) {
-      //jalan habis setelah authorize.. proses ap aj saat signing
+      //signIn -> authorize
       try {
         const existingGuest = await checkAdmin(user.email);
-
         console.log(existingGuest);
-        if (!existingGuest) return false;
+        if (!existingGuest) {
+          return "/unauthorized";
+        }
         return true;
       } catch {
+        //false means error (to error page)
         return false;
       }
+    },
+    authorized({ auth, request }) {
+      return !!auth?.user;
     },
   },
   pages: {
