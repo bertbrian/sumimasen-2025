@@ -1,6 +1,7 @@
 import NextAuth from "next-auth";
 import Google from "next-auth/providers/google";
 import { checkAdmin } from "./data-service";
+import { redirect } from "next/navigation";
 
 const authConfig = {
   providers: [
@@ -10,16 +11,25 @@ const authConfig = {
     }),
   ],
   callbacks: {
-    async authorized({ auth, request }) {
-      //if auth.user exist === true, else false shortcut below
-      const existingAdmin = await checkAdmin(auth?.user.email);
-      if (!auth?.user || !existingAdmin) return false;
+    authorized({ auth, request }) {
+      return !!auth?.user;
+    },
+    async signIn({ user, account, profile }) {
+      //jalan habis setelah authorize.. proses ap aj saat signing
+      try {
+        const existingGuest = await checkAdmin(user.email);
 
-      return true;
+        console.log(existingGuest);
+        if (!existingGuest) return false;
+        return true;
+      } catch {
+        return false;
+      }
     },
   },
   pages: {
     signIn: "/login",
+    error: "/error",
   },
 };
 
