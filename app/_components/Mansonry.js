@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function MasonryGridGallery() {
   return (
-    <div className="grid grid-cols-2 gap-4 md:grid-cols-4 max-w-7xl mx-auto pt-8">
+    <div className="mx-auto grid max-w-7xl grid-cols-2 gap-4 pt-8 md:grid-cols-4">
       {photos.map((item) => (
         <div key={item.index}>
           <Image

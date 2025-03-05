@@ -9,12 +9,12 @@ export default async function ProductList() {
   if (!products.length) return null;
 
   return (
-    <div className="flex gap-6 justify-center items-end max-w-7xl mx-auto pt-12">
+    <div className="mx-auto flex max-w-7xl items-end justify-center gap-6 pt-12">
       {products.map((item) => (
-        <div key={item.name} className="flex-col mx-auto text-center">
+        <div key={item.name} className="mx-auto flex-col text-center">
           <h3 className="text-3xl">{item.name}</h3>
           <span>{item.description}</span>
-          <div className="size-80 mx-auto">
+          <div className="mx-auto size-80">
             <Image src={item.image1} width={400} height={400} alt="image" />
           </div>
         </div>

@@ -13,17 +13,17 @@ const navLinks = [
   {
     name: "Home",
     href: "/account",
-    icon: <HomeIcon className="h-5 w-5 text-primary-600" />,
+    icon: <HomeIcon className="text-primary-600 h-5 w-5" />,
   },
   {
     name: "Print Receipt",
     href: "/account/printbill",
-    icon: <CalendarDaysIcon className="h-5 w-5 text-primary-600" />,
+    icon: <CalendarDaysIcon className="text-primary-600 h-5 w-5" />,
   },
   {
     name: "Guest profile",
     href: "/account/profile",
-    icon: <UserIcon className="h-5 w-5 text-primary-600" />,
+    icon: <UserIcon className="text-primary-600 h-5 w-5" />,
   },
 ];
 
@@ -32,11 +32,11 @@ function SideNavigation() {
 
   return (
     <nav className="border-r border-slate-400/10 pt-4">
-      <ul className="flex flex-col gap-2 h-full text-lg">
+      <ul className="flex h-full flex-col gap-2 text-lg">
         {navLinks.map((link) => (
           <li key={link.name}>
             <Link
-              className={`py-3 px-5 hover:bg-slate-200/10 hover:text-primary-100 transition-colors flex items-center gap-4 font-semibold rounded ${
+              className={`hover:text-primary-100 flex items-center gap-4 rounded px-5 py-3 font-semibold transition-colors hover:bg-slate-200/10 ${
                 pathname === link.href ? "bg-slate-200/10" : ""
               }`}
               href={link.href}

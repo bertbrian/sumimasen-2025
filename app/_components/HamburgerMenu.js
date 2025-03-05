@@ -7,7 +7,7 @@ export default function HamburgerMenu() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="block lg:hidden focus:outline-none hamburger">
+    <div className="hamburger block focus:outline-none lg:hidden">
       <Hamburger size={30} toggled={isOpen} toggle={setIsOpen} />
       {isOpen && (
         <HamburgerMenuLists

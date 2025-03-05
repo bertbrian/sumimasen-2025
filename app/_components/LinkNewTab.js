@@ -8,7 +8,7 @@ export default function LinkNewTab({ href, icon, onClick, children }) {
         target="_blank"
         rel="noopener noreferrer"
         onClick={onClick}
-        className="hover:bg-slate-400/20 rounded-md py-4 transition"
+        className="rounded-md py-4 transition hover:bg-slate-400/20"
       >
         <Image
           src={icon}

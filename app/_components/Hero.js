@@ -8,20 +8,20 @@ import Link from "next/link";
 export default function Hero() {
   return (
     <section id="hero">
-      <div className="max-w-7xl flex flex-col mx-auto md:flex-row md:justify-around md:p-6 md:mb-10 md:mt-8 ">
+      <div className="mx-auto flex max-w-7xl flex-col md:mb-10 md:mt-8 md:flex-row md:justify-around md:p-6">
         <div>
           <Image
             src={logoText}
             alt="logo-text"
             width={500}
-            className="block mx-auto select-none aspect-auto"
+            className="mx-auto block aspect-auto select-none"
           />
-          <h1 className="gradient-text text-xl md:text-2xl font-semibold text-center lg:text-2xl uppercase select-none">
+          <h1 className="gradient-text select-none text-center text-xl font-semibold uppercase md:text-2xl lg:text-2xl">
             #BeSafeorBeSorry
           </h1>
-          <div className="text-center pt-3.5 mt-3.5 gap-4 flex justify-center">
+          <div className="mt-3.5 flex justify-center gap-4 pt-3.5 text-center">
             <Modal isBuyNow={true}>
-              <button className="w-44 text-white bg-gradient-to-r from-violet-400 via-violet-500 to-violet-600 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-violet-300 shadow-lg shadow-violet-500/50 font-medium rounded-full text-xl px-4 py-2 text-center">
+              <button className="w-44 rounded-full bg-gradient-to-r from-violet-400 via-violet-500 to-violet-600 px-4 py-2 text-center text-xl font-medium text-white shadow-lg shadow-violet-500/50 hover:bg-gradient-to-l focus:outline-none focus:ring-4 focus:ring-violet-300">
                 Buy Now
               </button>
             </Modal>
@@ -30,7 +30,7 @@ export default function Hero() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button className="w-44 text-white hover:bg-gradient-to-l outline-violet-400 outline shadow-lg shadow-violet-500/50 font-medium rounded-full text-xl px-4 py-2 text-center">
+              <button className="w-44 rounded-full px-4 py-2 text-center text-xl font-medium text-white shadow-lg shadow-violet-500/50 outline outline-violet-400 hover:bg-gradient-to-l">
                 Open Reseller
               </button>
             </Link>

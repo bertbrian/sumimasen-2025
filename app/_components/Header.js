@@ -4,8 +4,8 @@ import Navigation from "./Navigation";
 
 export default function Header() {
   return (
-    <nav className="px-6 sticky top-0 py-4 backdrop-blur-sm z-10 border-b border-slate-400/10 shadow">
-      <div className="container max-w-7xl mx-auto flex items-center justify-between text-white">
+    <nav className="sticky top-0 z-10 border-b border-slate-400/10 px-6 py-4 shadow backdrop-blur-sm">
+      <div className="container mx-auto flex max-w-7xl items-center justify-between text-white">
         <Logo />
         <Navigation />
         <HamburgerMenu />

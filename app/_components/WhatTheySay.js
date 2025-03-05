@@ -35,8 +35,8 @@ export default function WhatTheySay() {
       </h3> */}
 
       <div>
-        <div className="mx-auto max-w-7xl rounded-md overflow-hidden">
-          <div className="relative h-64 reviews-box">
+        <div className="mx-auto max-w-7xl overflow-hidden rounded-md">
+          <div className="reviews-box relative h-64">
             <motion.div
               className="absolute left-0 flex gap-4"
               ref={ref}

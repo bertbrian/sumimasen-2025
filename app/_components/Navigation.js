@@ -38,7 +38,7 @@ export default async function Navigation() {
       {session?.user?.image ? (
         <Link
           href="./account"
-          className="flex gap-2 items-center tracking-widest hover:text-blue-300"
+          className="flex items-center gap-2 tracking-widest hover:text-blue-300"
         >
           <Image
             className="size-8 rounded-full"
@@ -53,7 +53,7 @@ export default async function Navigation() {
       ) : (
         <Link
           href="./account"
-          className="tracking-widest hover:text-blue-300 hidden"
+          className="hidden tracking-widest hover:text-blue-300"
         >
           Account
         </Link>
@@ -63,7 +63,7 @@ export default async function Navigation() {
           href="https://wa.me/+6285179686686?text=Hai%20sumin%2C%20saya%20tertarik%20menjadi%20Reseller%2C%20apa%20saja%20syaratnya%3F%3F"
           target="_blank"
           rel="noopener noreferrer"
-          className="w-48 text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-green-300 shadow-lg shadow-green-500/50 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2"
+          className="me-2 w-48 rounded-full bg-gradient-to-r from-green-400 via-green-500 to-green-600 px-5 py-2.5 text-center text-sm font-medium text-white shadow-lg shadow-green-500/50 hover:bg-gradient-to-l focus:outline-none focus:ring-4 focus:ring-green-300"
         >
           Open Reseller
         </Link>

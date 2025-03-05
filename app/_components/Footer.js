@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <footer className="py-6">
       {/*<!-- Footer Flex Container -->*/}
-      <div className="max-w-7xl flex flex-col items-center justify-between mx-auto space-y-16 md:flex-row md:space-y-0">
+      <div className="mx-auto flex max-w-7xl flex-col items-center justify-between space-y-16 md:flex-row md:space-y-0">
         {/*<!-- Social Container -->*/}
         <div className="flex space-x-10">
           {footerLogos.map((icon) => (
@@ -22,7 +22,7 @@ export default function Footer() {
                 width={20}
                 height={20}
                 alt={icon.src}
-                className="h-6 w-7 ficon"
+                className="ficon h-6 w-7"
               />
             </Link>
           ))}

@@ -28,15 +28,15 @@ export default function HamburgerMenuLists({ toggled, toggle, onclicklink }) {
   ];
 
   return (
-    <nav className="fixed top-0 right-0 w-full py-16 h-screen z-10 bg-gray-900/80 rounded-md">
-      <ul className="flex flex-col items-center justify-center w-full space-y-6 font-bold text-white rounded-sm">
-        <li className="absolute top-8 right-4">
+    <nav className="fixed right-0 top-0 z-10 h-screen w-full rounded-md bg-gray-900/80 py-16">
+      <ul className="flex w-full flex-col items-center justify-center space-y-6 rounded-sm font-bold text-white">
+        <li className="absolute right-4 top-8">
           <Hamburger size={30} toggled={toggled} toggle={toggle} />
         </li>
         {navLinks.map((link) => (
           <li key={link.name}>
             <Link
-              className={`px-5 hover:text-primary-100 transition-colors flex items-center gap-4 font-semibold text-primary-200 ${
+              className={`hover:text-primary-100 text-primary-200 flex items-center gap-4 px-5 font-semibold transition-colors ${
                 pathname === link.href ? "text-violet-400" : ""
               }`}
               href={link.href}

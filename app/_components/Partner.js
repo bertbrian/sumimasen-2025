@@ -16,7 +16,7 @@ export default function Partner() {
               width={20}
               height={20}
               sizes="full"
-              className="m-2 rounded-lg w-20 h-auto mx-auto"
+              className="m-2 mx-auto h-auto w-20 rounded-lg"
             />
           </Link>
         </div>
