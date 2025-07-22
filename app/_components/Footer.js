@@ -29,7 +29,7 @@ export default function Footer() {
         </div>
         {/*<!-- Logo-cropped/Menu Container -->*/}
         {/* <div className="flex flex-col items-center justify-between space-y-8 text-lg font-light md:flex-row md:space-y-0 md:space-x-14 text-grayishBlue"> */}
-        <div className="flex flex-col justify-end text-right">
+        <div className="flex flex-col text-center md:justify-end md:text-right">
           <small>Made with ❤️ from Sumimasen</small>
           <small>© 2023, Sumimasen, Inc. All Rights Reserved.</small>
         </div>

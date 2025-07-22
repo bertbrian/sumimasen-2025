@@ -10,8 +10,16 @@ import { useState } from "react";
 import LinkNewTab from "./LinkNewTab";
 
 import links from "@/app/db/links.json";
+import Image from "next/image";
 
-export default function Modal({ children, isBuyNow = false }) {
+import coolBox from "@/public/cool-box.svg";
+import delayBox from "@/public/delay-box.svg";
+import dottedBox from "@/public/dotted-box.svg";
+import ultrathinBox from "@/public/ultrathin.svg";
+import ButtonMarketplace from "./ButtonMarketplace";
+import ModalProduct from "./ModalProduct";
+
+export default function Modal({ children, variant = "", isBuyNow = false }) {
   let [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -25,14 +33,9 @@ export default function Modal({ children, isBuyNow = false }) {
         <div className="fixed inset-0 flex w-screen items-center justify-center p-4">
           <DialogPanel
             transition
-            className="max-w-lg space-y-4 rounded-md bg-slate-600/65 p-8 backdrop-blur duration-300 ease-out data-[closed]:scale-95 data-[closed]:opacity-0"
+            className="max-w-lg grow space-y-4 rounded-md bg-slate-600/65 p-8 backdrop-blur duration-300 ease-out data-[closed]:scale-95 data-[closed]:opacity-0"
           >
             <div className="flex items-center justify-between">
-              {!isBuyNow && (
-                <DialogTitle className="font-bold">
-                  Sumimasen Ultra Thin (3pcs)
-                </DialogTitle>
-              )}
               <XMarkIcon
                 className="absolute right-4 top-4 size-8 cursor-pointer"
                 onClick={() => setIsOpen(false)}
@@ -40,7 +43,11 @@ export default function Modal({ children, isBuyNow = false }) {
             </div>
             {isBuyNow ? (
               <>
-                <Description>our official stores :</Description>
+                <Description>
+                  <span className="flex justify-center text-center text-xl font-semibold capitalize">
+                    our official stores :
+                  </span>
+                </Description>
                 <div className="grid justify-center gap-4 text-center md:flex md:items-end md:gap-12 md:p-4 md:px-8">
                   {links.map((link) => (
                     <LinkNewTab
@@ -56,16 +63,7 @@ export default function Modal({ children, isBuyNow = false }) {
               </>
             ) : (
               <>
-                <Description>
-                  Extra thin as if you are not wearing a condom
-                  <br />
-                  <b>0.03 mm</b>
-                </Description>
-                <div className="grid gap-4">
-                  <button onClick={handleTokped}>Tokopedia</button>
-                  <button onClick={handleShopee}>Shopee</button>
-                  <button onClick={handleLazada}>Lazada</button>
-                </div>
+                <ModalProduct variant={variant} />
               </>
             )}
           </DialogPanel>

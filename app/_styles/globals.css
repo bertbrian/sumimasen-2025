@@ -36,55 +36,60 @@
   }
 }
 
-.embla__viewport {
-  overflow: hidden;
-}
-.embla__container {
-  display: flex;
-}
-.embla__slide {
-  flex: 0 0 100%;
-  min-width: 0;
-}
+@layer utilities {
+  .gradient-text {
+    @apply mx-auto bg-gradient-to-tr from-[#696eff] to-[#f8acff] bg-clip-text text-transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 
-body {
-  @apply bg-gradient-to-tl from-[#0f0c29] via-[#302b63] to-[#24243e] text-white;
-}
+  .embla__viewport {
+    overflow: hidden;
+  }
+  .embla__container {
+    display: flex;
+  }
+  .embla__slide {
+    flex: 0 0 100%;
+    min-width: 0;
+  }
 
-.reviews-box {
-  overflow: hidden;
-  mask: linear-gradient(90deg, transparent, white 3%, white 97%, transparent);
-}
+  body {
+    @apply bg-gradient-to-tl from-[#0f0c29] via-[#302b63] to-[#24243e] text-white;
+  }
 
-.gradient-text {
-  @apply mx-auto bg-gradient-to-tr from-[#696eff] to-[#f8acff] bg-clip-text text-transparent;
-}
+  .reviews-box {
+    overflow: hidden;
+    mask: linear-gradient(90deg, transparent, white 3%, white 97%, transparent);
+  }
 
-.product-container {
-  @apply flex flex-col items-center justify-between space-y-10 lg:space-x-10 text-center w-full lg:flex-row lg:space-y-0;
-}
+  .product-container {
+    @apply flex w-full flex-col items-center justify-between space-y-10 text-center lg:flex-row lg:space-x-10 lg:space-y-0;
+  }
 
-.feature-desc {
-  @apply text-xl font-semibold lg:text-3xl;
-}
+  .feature-desc {
+    @apply text-xl font-semibold lg:text-3xl;
+  }
 
-.image-wrapper {
-  @apply flex md:size-64 lg:size-72 cursor-pointer;
-}
+  .image-wrapper {
+    @apply flex cursor-pointer md:size-64 lg:size-72;
+  }
 
-.item-title {
-  @apply text-3xl font-semibold w-full;
-}
+  .item-title {
+    @apply w-full text-3xl font-semibold;
+  }
 
-.ficon:hover {
-  filter: brightness(0) saturate(100%) invert(67%) sepia(28%) saturate(5662%)
-    hue-rotate(213deg) brightness(100%) contrast(97%);
-}
+  .ficon:hover {
+    filter: brightness(0) saturate(100%) invert(67%) sepia(28%) saturate(5662%)
+      hue-rotate(213deg) brightness(100%) contrast(97%);
+  }
 
-.btn-green {
-  @apply px-10 py-2 my-0 font-bold tracking-widest rounded-lg uppercase border-2 border-green-600 bg-green-600 hover:bg-green-500 hover:text-white;
-}
+  .btn-green {
+    @apply my-0 rounded-lg border-2 border-green-600 bg-green-600 px-10 py-2 font-bold uppercase tracking-widest hover:bg-green-500 hover:text-white;
+  }
 
-.btn-orange {
-  @apply px-10 py-2 my-0 font-bold tracking-widest rounded-lg uppercase border-2 border-orange-600 bg-orange-600 hover:bg-orange-500 hover:text-white;
+  .btn-orange {
+    @apply my-0 rounded-lg border-2 border-orange-600 bg-orange-600 px-10 py-2 font-bold uppercase tracking-widest hover:bg-orange-500 hover:text-white;
+  }
 }

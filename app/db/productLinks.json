@@ -1,0 +1,34 @@
+{
+  "cool": {
+    "tokopedia": "https://tk.tokopedia.com/ZSks6L6x6/",
+    "shopee": "https://s.shopee.co.id/2qAl5Gp1xm",
+    "lazada": "https://www.lazada.co.id/products/sumimasen-kondom-sensasi-mint-tipis-pria-x-3pcs-sumimasen-kondom-mint-i8332304148-s14750466429.html",
+    "title": "Sumimasen Cool",
+    "description": "Feel the sensation of mint",
+    "url": "/cool-box.svg"
+  },
+  "ultrathin": {
+    "tokopedia": "https://tk.tokopedia.com/ZSks611GJ/",
+    "shopee": "https://s.shopee.co.id/4VIz4M8okt",
+    "lazada": "https://www.lazada.co.id/products/sumimasen-kondom-extra-tipis-pria-x-3pcs-sumimasen-kondom-ultra-thin-i8332254444-s14750476876.html",
+    "title": "Sumimasen Ultra Thin",
+    "description": "Extra thin as if you are not wearing a condom",
+    "url": "/ultrathin.svg"
+  },
+  "dotted": {
+    "tokopedia": "https://tk.tokopedia.com/ZSks6NSaM/",
+    "shopee": "https://s.shopee.co.id/g6GVF7MK4",
+    "lazada": "https://www.lazada.co.id/products/sumimasen-kondom-bergerigi-tipis-pria-x-3pcs-sumimasen-kondom-dotted-i8332320282-s14750506082.html",
+    "title": "Sumimasen Dotted",
+    "description": "Feel the sensation of dotted textures that gives something extra in bed",
+    "url": "/dotted-box.svg"
+  },
+  "delay": {
+    "tokopedia": "https://tk.tokopedia.com/ZSks669CB/",
+    "shopee": "https://s.shopee.co.id/9Uhf1ZJpjM",
+    "lazada": "https://www.lazada.co.id/products/sumimasen-kondom-tahan-lama-tipis-pria-x-3pcs-sumimasen-kondom-delay-i8332292229-s14750498344.html",
+    "title": "Sumimasen Delay",
+    "description": "Gives a sensation of long-lasting pleasure",
+    "url": "/delay-box.svg"
+  }
+}
