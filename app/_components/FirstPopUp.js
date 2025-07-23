@@ -66,7 +66,7 @@ export default function FirstTimeModal() {
               />
             </div>
             <p className="text-md text-justify md:text-xl">
-              don&apos;t receive / response any messages from our instagram
+              <b>don&apos;t response</b> any links / messages from our instagram
               right now
             </p>
             <p className="text-md mt-2 md:mt-4 md:text-xl">Thank You 🙏</p>
