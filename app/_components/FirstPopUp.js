@@ -6,16 +6,26 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import warning from "@/public/firstPopUp/warning.jpg";
 
+const MODAL_EXPIRE_MINUTES = 2;
+
 export default function FirstTimeModal() {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
-    const hasSeenModal = localStorage.getItem("hasSeenModal");
-    if (!hasSeenModal) {
+    const seenAt = localStorage.getItem("hasSeenModalAt");
+
+    if (!seenAt || isExpired(seenAt)) {
       setIsOpen(true);
-      localStorage.setItem("hasSeenModal", "true");
+      localStorage.setItem("hasSeenModalAt", Date.now());
     }
   }, []);
+
+  const isExpired = (timestamp) => {
+    const timePassed = Date.now() - parseInt(timestamp, 10);
+    return timePassed > MODAL_EXPIRE_MINUTES * 60 * 1000; // 3 minutes
+  };
+
+  if (!isOpen) return null;
 
   return (
     <Dialog

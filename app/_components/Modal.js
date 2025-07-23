@@ -19,7 +19,7 @@ import ultrathinBox from "@/public/ultrathin.svg";
 import ButtonMarketplace from "./ButtonMarketplace";
 import ModalProduct from "./ModalProduct";
 
-export default function Modal({ children, variant = "", isBuyNow = false }) {
+export default function Modal({ children, variant, isBuyNow = false }) {
   let [isOpen, setIsOpen] = useState(false);
 
   return (

@@ -24,8 +24,11 @@ export default function RootLayout({ children }) {
     <html lang="en" className={`${montserrat.variable} scroll-smooth`}>
       <body className="grid min-h-screen grid-rows-[auto_1fr_auto] overflow-x-hidden font-sans antialiased">
         <Header />
-        <main>{children}</main>
-        <FirstPopUp />
+        <main>
+          <FirstPopUp />
+          {children}
+        </main>
+
         <Footer />
       </body>
     </html>
