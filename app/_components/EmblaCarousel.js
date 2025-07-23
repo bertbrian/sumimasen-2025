@@ -27,7 +27,7 @@ export default function EmblaCarousel({ children }) {
       {children}
       <div id="products" className="embla py-6">
         <div className="embla__viewport mx-auto max-w-sm" ref={emblaRef}>
-          <div className="embla__container h-full">
+          <div className="embla__container h-full select-none">
             <div className="embla__slide cursor-pointer">
               <Modal variant="ultrathin">
                 <Image

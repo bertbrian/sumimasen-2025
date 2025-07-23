@@ -3,10 +3,10 @@ import Link from "next/link";
 import { auth } from "../_lib/auth";
 
 const navLinks = [
-  {
-    name: "Products",
-    href: "/products",
-  },
+  // {
+  //   name: "Products",
+  //   href: "/products",
+  // },
   {
     name: "About us",
     href: "/aboutus",

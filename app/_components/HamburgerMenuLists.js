@@ -4,15 +4,16 @@ import { usePathname } from "next/navigation";
 
 export default function HamburgerMenuLists({ toggled, toggle, onclicklink }) {
   const pathname = usePathname();
+
   const navLinks = [
     {
       name: "Home",
       href: "/",
     },
-    {
-      name: "Products",
-      href: "/#products",
-    },
+    // {
+    //   name: "Products",
+    //   href: "/#products",
+    // },
     {
       name: "About Us",
       href: "/aboutus",

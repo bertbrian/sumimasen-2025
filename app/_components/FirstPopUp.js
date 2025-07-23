@@ -1,4 +1,3 @@
-// components/FirstTimeModal.jsx
 "use client";
 
 import { Description, Dialog, DialogPanel } from "@headlessui/react";
@@ -11,7 +10,11 @@ export default function FirstTimeModal() {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
-    setIsOpen(true);
+    const hasSeenModal = localStorage.getItem("hasSeenModal");
+    if (!hasSeenModal) {
+      setIsOpen(true);
+      localStorage.setItem("hasSeenModal", "true");
+    }
   }, []);
 
   return (
@@ -32,29 +35,31 @@ export default function FirstTimeModal() {
             />
           </div>
           <Description>
-            <span className="flex justify-center pb-4 text-center text-5xl font-semibold capitalize">
+            <span className="flex justify-center pb-2 text-center text-3xl font-semibold capitalize md:pb-4 md:text-5xl">
               ATTENTION !!!
             </span>
-            <p className="text-center text-xl">
+            <p className="text-md text-center md:text-xl">
               our instagram just <b>got hacked</b>
             </p>
-            <p className="text-center text-xl">
-              we&apos;re still on process to recover
+            <p className="text-md text-center md:text-xl">
+              but don&apos;t worry, we&apos;re still on process to recover
             </p>
 
-            <Image
-              src={warning}
-              width={300}
-              height={200}
-              priority
-              alt="warning"
-              className="m-8 mx-auto rounded-lg"
-            />
-            <p className="text-justify text-xl">
+            <div className="flex items-center justify-center">
+              <Image
+                src={warning}
+                width={300}
+                height={200}
+                priority
+                alt="warning"
+                className="m-2 mx-auto rounded-lg md:m-8"
+              />
+            </div>
+            <p className="text-md text-justify md:text-xl">
               don&apos;t receive / response any messages from our instagram
               right now
             </p>
-            <p className="mt-4 text-xl">Thank You 🙏</p>
+            <p className="text-md mt-2 md:mt-4 md:text-xl">Thank You 🙏</p>
             <p className="text-xl">Yuta</p>
           </Description>
         </DialogPanel>
