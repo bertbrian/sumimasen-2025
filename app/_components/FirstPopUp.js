@@ -9,7 +9,7 @@ import warning from "@/public/firstPopUp/warning.jpg";
 const MODAL_EXPIRE_MINUTES = 2;
 
 export default function FirstTimeModal() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
 
   useEffect(() => {
     const seenAt = localStorage.getItem("hasSeenModalAt");
@@ -62,12 +62,12 @@ export default function FirstTimeModal() {
                 height={200}
                 priority
                 alt="warning"
-                className="m-2 mx-auto rounded-lg md:m-8"
+                className="m-2 mx-auto w-40 rounded-lg md:m-8 md:w-72"
               />
             </div>
             <p className="text-md text-justify md:text-xl">
-              <b>don&apos;t response</b> any links / messages from our instagram
-              right now
+              <b>don&apos;t response to </b> any links / messages from our
+              instagram right now
             </p>
             <p className="text-md mt-2 md:mt-4 md:text-xl">Thank You 🙏</p>
             <p className="text-xl">Yuta</p>
