@@ -44,8 +44,8 @@ export default function FirstTimeModal() {
               onClick={() => setIsOpen(false)}
             />
           </div>
-          <Description>
-            <span className=" flex justify-center pb-2 text-center text-3xl font-semibold uppercase">
+          <div>
+            <span className="flex justify-center pb-2 text-center text-3xl font-semibold uppercase">
               attention !!!
             </span>
             <p className="text-center">
@@ -62,7 +62,7 @@ export default function FirstTimeModal() {
                 height={300}
                 priority
                 alt="warning image"
-                className="m-2 mx-auto rounded-lg md:my-4 md:w-48"
+                className="m-2 mx-auto w-48 rounded-lg md:my-4"
               />
             </div>
             <p className="text-justify">
@@ -70,8 +70,8 @@ export default function FirstTimeModal() {
               instagram right now
             </p>
             <p className="mt-2 md:mt-4">Thank You 🙏</p>
-            <p className="text-xl">Yuta</p>
-          </Description>
+            <p>Yuta</p>
+          </div>
         </DialogPanel>
       </div>
     </Dialog>
