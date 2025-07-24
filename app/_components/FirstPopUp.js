@@ -44,7 +44,7 @@ export default function FirstTimeModal() {
               onClick={() => setIsOpen(false)}
             />
           </div>
-          <div>
+          <Description as="div">
             <span className="flex justify-center pb-2 text-center text-3xl font-semibold uppercase">
               attention !!!
             </span>
@@ -66,12 +66,12 @@ export default function FirstTimeModal() {
               />
             </div>
             <p className="text-justify">
-              <b>don&apos;t response to </b> any links / messages from our
-              instagram right now
+              <b>don&apos;t respond</b> any links / messages from our instagram
+              for now 🙏
             </p>
-            <p className="mt-2 md:mt-4">Thank You 🙏</p>
+            <p className="mt-2 md:mt-4">Thank you,</p>
             <p>Yuta</p>
-          </div>
+          </Description>
         </DialogPanel>
       </div>
     </Dialog>
