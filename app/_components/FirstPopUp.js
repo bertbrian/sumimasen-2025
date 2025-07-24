@@ -36,7 +36,7 @@ export default function FirstTimeModal() {
       <div className="fixed inset-0 flex w-screen items-center justify-center bg-slate-900/70 p-4">
         <DialogPanel
           transition
-          className="max-w-lg grow space-y-4 rounded-md bg-slate-600/65 p-8 backdrop-blur duration-300 ease-out data-[closed]:scale-95 data-[closed]:opacity-0"
+          className="max-h-full max-w-lg grow space-y-4 rounded-md bg-slate-600/65 p-8 backdrop-blur duration-300 ease-out data-[closed]:scale-95 data-[closed]:opacity-0"
         >
           <div className="flex items-center justify-between">
             <XMarkIcon
@@ -45,13 +45,13 @@ export default function FirstTimeModal() {
             />
           </div>
           <Description>
-            <span className="flex justify-center pb-2 text-center text-3xl font-semibold capitalize md:pb-4 md:text-5xl">
-              ATTENTION !!!
+            <span className=" flex justify-center pb-2 text-center text-3xl font-semibold uppercase">
+              attention !!!
             </span>
-            <p className="text-md text-center md:text-xl">
+            <p className="text-center">
               our instagram just <b>got hacked</b>
             </p>
-            <p className="text-md text-center md:text-xl">
+            <p className="text-center">
               but don&apos;t worry, we&apos;re still on process to recover
             </p>
 
@@ -59,17 +59,17 @@ export default function FirstTimeModal() {
               <Image
                 src={warning}
                 width={300}
-                height={200}
+                height={300}
                 priority
-                alt="warning"
-                className="m-2 mx-auto w-40 rounded-lg md:m-8 md:w-72"
+                alt="warning image"
+                className="m-2 mx-auto rounded-lg md:my-4 md:w-48"
               />
             </div>
-            <p className="text-md text-justify md:text-xl">
+            <p className="text-justify">
               <b>don&apos;t response to </b> any links / messages from our
               instagram right now
             </p>
-            <p className="text-md mt-2 md:mt-4 md:text-xl">Thank You 🙏</p>
+            <p className="mt-2 md:mt-4">Thank You 🙏</p>
             <p className="text-xl">Yuta</p>
           </Description>
         </DialogPanel>
