@@ -36,7 +36,7 @@ export default function FirstTimeModal() {
       <div className="fixed inset-0 flex w-screen items-center justify-center bg-slate-900/70 p-4">
         <DialogPanel
           transition
-          className="max-h-full max-w-lg grow space-y-4 rounded-md bg-slate-600/65 p-8 backdrop-blur duration-300 ease-out data-[closed]:scale-95 data-[closed]:opacity-0"
+          className="max-w-md grow space-y-4 rounded-md bg-slate-600/65 p-8 backdrop-blur duration-300 ease-out data-[closed]:scale-95 data-[closed]:opacity-0"
         >
           <div className="flex items-center justify-between">
             <XMarkIcon
