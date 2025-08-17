@@ -4,6 +4,7 @@ import Header from "./_components/Header";
 import FirstPopUp from "./_components/FirstPopUp";
 
 import { Montserrat } from "next/font/google";
+import WhatsAppSide from "./_components/WhatsAppSide";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -23,9 +24,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${montserrat.variable} scroll-smooth`}>
       <body className="grid min-h-screen grid-rows-[auto_1fr_auto] overflow-x-hidden font-sans antialiased">
+        <WhatsAppSide />
         <Header />
         <main>
-          <FirstPopUp />
+          {/* <FirstPopUp /> */}
           {children}
         </main>
 

@@ -21,11 +21,11 @@ export default function Hero() {
           </h1>
           <div className="mt-3.5 flex justify-center gap-4 pt-3.5 text-center">
             <Modal isBuyNow={true}>
-              <button className="w-44 rounded-full bg-gradient-to-r from-violet-400 via-violet-500 to-violet-600 px-4 py-2 text-center text-xl font-medium text-white shadow-lg shadow-violet-500/50 hover:bg-gradient-to-l focus:outline-none focus:ring-4 focus:ring-violet-300">
+              <button className="w-52 rounded-full bg-gradient-to-r from-violet-400 via-violet-500 to-violet-600 px-4 py-2 text-center text-xl font-medium text-white shadow-lg shadow-violet-500/50 hover:bg-gradient-to-l focus:outline-none focus:ring-4 focus:ring-violet-300">
                 Buy Now
               </button>
             </Modal>
-            <Link
+            {/* <Link
               href="https://wa.me/+6285179686686?text=Hai%20sumin%2C%20saya%20tertarik%20menjadi%20Reseller%2C%20apa%20saja%20syaratnya%3F%3F"
               target="_blank"
               rel="noopener noreferrer"
@@ -33,7 +33,7 @@ export default function Hero() {
               <button className="w-44 rounded-full px-4 py-2 text-center text-xl font-medium text-white shadow-lg shadow-violet-500/50 outline outline-violet-400 hover:bg-gradient-to-l">
                 Open Reseller
               </button>
-            </Link>
+            </Link> */}
           </div>
           <div>
             <Partner />
