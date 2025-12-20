@@ -22,15 +22,19 @@ export default function ButtonMarketplace({ variant }) {
           Shopee
         </a>
       </Link>
-      <Link href={productLinks[variant].lazada} passHref legacyBehavior>
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          className="me-2 rounded-full bg-gradient-to-r from-violet-400 via-violet-500 to-violet-600 px-5 py-2 text-center text-xl font-medium text-white shadow-lg shadow-violet-500/30 hover:bg-gradient-to-l focus:outline-none focus:ring-4 focus:ring-violet-300"
-        >
-          Lazada
-        </a>
-      </Link>
+      {productLinks[variant].title === "ultrasafe" ? (
+        ""
+      ) : (
+        <Link href={productLinks[variant].lazada} passHref legacyBehavior>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            className="me-2 rounded-full bg-gradient-to-r from-violet-400 via-violet-500 to-violet-600 px-5 py-2 text-center text-xl font-medium text-white shadow-lg shadow-violet-500/30 hover:bg-gradient-to-l focus:outline-none focus:ring-4 focus:ring-violet-300"
+          >
+            Lazada
+          </a>
+        </Link>
+      )}
     </div>
   );
 }

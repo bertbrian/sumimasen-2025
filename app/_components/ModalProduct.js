@@ -13,7 +13,13 @@ export default function ModalProduct({ variant }) {
         <p className="text-center">
           {productLinks[variant].description}
           <br />
-          {variant === "ultrathin" ? <b>0.03 mm</b> : <b>0.06 mm</b>}
+          {variant === "ultrathin" ? (
+            <b>0.03 mm</b>
+          ) : variant === "ultrasafe" ? (
+            <b>0.08 mm</b>
+          ) : (
+            <b>0.06 mm</b>
+          )}
         </p>
       </Description>
       <div className="select-none py-3">
@@ -22,7 +28,7 @@ export default function ModalProduct({ variant }) {
           alt={variant}
           width={400}
           height={400}
-          className="w-full"
+          className={`w-full ${productLinks[variant].title === "ultrasafe" ? "mt-10 scale-125" : ""}`}
         />
       </div>
 

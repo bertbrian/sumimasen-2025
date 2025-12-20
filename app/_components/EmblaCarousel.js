@@ -8,6 +8,7 @@ import coolBox from "@/public/cool-box.svg";
 import delayBox from "@/public/delay-box.svg";
 import dottedBox from "@/public/dotted-box.svg";
 import ultrathinBox from "@/public/ultrathin.svg";
+import ultrasafe from "@/public/ultra_safe-cropped.svg";
 import Image from "next/image";
 import Modal from "./Modal";
 
@@ -28,6 +29,17 @@ export default function EmblaCarousel({ children }) {
       <div id="products" className="embla py-6">
         <div className="embla__viewport mx-auto max-w-sm" ref={emblaRef}>
           <div className="embla__container h-full select-none">
+            <div className="embla__slide cursor-pointer">
+              <Modal variant="ultrasafe">
+                <Image
+                  src={ultrasafe}
+                  priority
+                  alt="ultra safe"
+                  className="ml-8 mt-10 scale-125"
+                />
+              </Modal>
+            </div>
+
             <div className="embla__slide cursor-pointer">
               <Modal variant="ultrathin">
                 <Image
