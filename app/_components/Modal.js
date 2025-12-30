@@ -1,22 +1,11 @@
 "use client";
-import {
-  Description,
-  Dialog,
-  DialogPanel,
-  DialogTitle,
-} from "@headlessui/react";
+import { Description, Dialog, DialogPanel } from "@headlessui/react";
 import { XMarkIcon } from "@heroicons/react/24/solid";
 import { useState } from "react";
 import LinkNewTab from "./LinkNewTab";
 
 import links from "@/app/db/links.json";
-import Image from "next/image";
 
-import coolBox from "@/public/cool-box.svg";
-import delayBox from "@/public/delay-box.svg";
-import dottedBox from "@/public/dotted-box.svg";
-import ultrathinBox from "@/public/ultrathin.svg";
-import ButtonMarketplace from "./ButtonMarketplace";
 import ModalProduct from "./ModalProduct";
 
 export default function Modal({ children, variant, isBuyNow = false }) {
