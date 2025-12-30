@@ -6,21 +6,14 @@ import { useCallback } from "react";
 
 import Image from "next/image";
 import Modal from "./Modal";
+import ultrasafe from "@/public/Ultra Safe.jpeg";
+import ultrathinBox from "@/public/Ultra Thin.png";
+import dottedBox from "@/public/Dotted.png";
+import coolBox from "@/public/Cool.png";
+import delayBox from "@/public/Delay.png";
 
 export default function EmblaCarousel() {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay()]);
-
-  //image url
-  const coolBox =
-    "https://pamfuuctmarnncksxvym.supabase.co/storage/v1/object/public/product-images/cool-box.svg";
-  const delayBox =
-    "https://pamfuuctmarnncksxvym.supabase.co/storage/v1/object/public/product-images/delay-box.svg";
-  const dottedBox =
-    "https://pamfuuctmarnncksxvym.supabase.co/storage/v1/object/public/product-images/dotted-box.svg";
-  const ultrathinBox =
-    "https://pamfuuctmarnncksxvym.supabase.co/storage/v1/object/public/product-images/ultrathin.svg";
-  const ultrasafe =
-    "https://pamfuuctmarnncksxvym.supabase.co/storage/v1/object/public/product-images/ultrasafe.svg";
 
   const scrollPrev = useCallback(() => {
     if (emblaApi) emblaApi.scrollPrev();
@@ -32,9 +25,12 @@ export default function EmblaCarousel() {
 
   return (
     <div id="products" className="embla py-6">
-      <div className="embla__viewport mx-auto max-w-sm" ref={emblaRef}>
+      <div
+        className="embla__viewport mx-auto max-w-sm rounded-2xl"
+        ref={emblaRef}
+      >
         <div className="embla__container h-full select-none">
-          <div className="embla__slide cursor-pointer">
+          <div className="embla__slide -z-10 cursor-pointer">
             <Modal variant="ultrasafe">
               <Image
                 src={ultrasafe}
@@ -42,11 +38,10 @@ export default function EmblaCarousel() {
                 height={400}
                 priority
                 alt="ultra safe"
-                className="ml-4 mt-10 scale-125"
+                className="scale-125"
               />
             </Modal>
           </div>
-
           <div className="embla__slide cursor-pointer">
             <Modal variant="ultrathin">
               <Image

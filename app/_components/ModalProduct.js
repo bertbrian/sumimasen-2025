@@ -22,14 +22,14 @@ export default function ModalProduct({ variant }) {
           )}
         </p>
       </Description>
-      <div className="select-none py-3">
+      <div className="relative w-full select-none overflow-hidden rounded-2xl py-3">
         <Image
           src={productLinks[variant].url}
           alt={variant}
           priority
           width={400}
           height={400}
-          className={`w-full ${productLinks[variant].title === "ultrasafe" ? "mt-10 scale-125" : ""}`}
+          className={`w-full ${variant === "ultrasafe" ? "scale-125 object-cover" : ""}`}
         />
       </div>
 
