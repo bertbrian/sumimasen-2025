@@ -6,6 +6,10 @@ import ButtonMarketplace from "./ButtonMarketplace";
 export default function ModalProduct({ variant }) {
   return (
     <>
+      {/* Pre load images */}
+      {Object.values(productLinks).map((item) => (
+        <img key={item.url} src={item.url} alt="" className="hidden" />
+      ))}
       <DialogTitle className="font-bold">
         {productLinks[variant].title} (3pcs)
       </DialogTitle>
@@ -29,7 +33,7 @@ export default function ModalProduct({ variant }) {
           priority
           width={400}
           height={400}
-          className={`w-full ${variant === "ultrasafe" ? "scale-125 object-cover" : ""}`}
+          className={`w-full ${variant === "ultrasafe" ? "scale-125 object-cover" : ""}rounded-2xl`}
         />
       </div>
 
