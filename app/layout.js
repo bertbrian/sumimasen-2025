@@ -5,7 +5,7 @@ import FirstPopUp from "./_components/FirstPopUp";
 
 import { Montserrat } from "next/font/google";
 import WhatsAppSide from "./_components/WhatsAppSide";
-import productLinks from "@/app/db/productLinks.json";
+import { Analytics } from "@vercel/analytics/next";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -30,6 +30,7 @@ export default function RootLayout({ children }) {
         <main>
           {/* <FirstPopUp /> */}
           {children}
+          <Analytics />
         </main>
 
         <Footer />
