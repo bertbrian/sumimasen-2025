@@ -26,6 +26,7 @@ export default function ModalProduct({ variant }) {
         <Image
           src={productLinks[variant].url}
           alt={variant}
+          priority
           width={400}
           height={400}
           className={`w-full ${productLinks[variant].title === "ultrasafe" ? "mt-10 scale-125" : ""}`}
