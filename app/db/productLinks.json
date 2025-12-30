@@ -5,7 +5,7 @@
     "lazada": "https://www.lazada.co.id/products/sumimasen-kondom-sensasi-mint-tipis-pria-x-3pcs-sumimasen-kondom-mint-i8332304148-s14750466429.html",
     "title": "Sumimasen Cool",
     "description": "Feel the sensation of mint",
-    "url": "/cool-box.svg"
+    "url": "https://pamfuuctmarnncksxvym.supabase.co/storage/v1/object/public/product-images/cool-box.svg"
   },
   "ultrathin": {
     "tokopedia": "https://tk.tokopedia.com/ZSks611GJ/",
@@ -13,7 +13,7 @@
     "lazada": "https://www.lazada.co.id/products/sumimasen-kondom-extra-tipis-pria-x-3pcs-sumimasen-kondom-ultra-thin-i8332254444-s14750476876.html",
     "title": "Sumimasen Ultra Thin",
     "description": "Extra thin as if you are not wearing a condom",
-    "url": "/ultrathin.svg"
+    "url": "https://pamfuuctmarnncksxvym.supabase.co/storage/v1/object/public/product-images/ultrathin.svg"
   },
   "dotted": {
     "tokopedia": "https://tk.tokopedia.com/ZSks6NSaM/",
@@ -21,7 +21,7 @@
     "lazada": "https://www.lazada.co.id/products/sumimasen-kondom-bergerigi-tipis-pria-x-3pcs-sumimasen-kondom-dotted-i8332320282-s14750506082.html",
     "title": "Sumimasen Dotted",
     "description": "Feel the sensation of dotted textures that gives something extra in bed",
-    "url": "/dotted-box.svg"
+    "url": "https://pamfuuctmarnncksxvym.supabase.co/storage/v1/object/public/product-images/dotted-box.svg"
   },
   "delay": {
     "tokopedia": "https://tk.tokopedia.com/ZSks669CB/",
@@ -29,7 +29,7 @@
     "lazada": "https://www.lazada.co.id/products/sumimasen-kondom-tahan-lama-tipis-pria-x-3pcs-sumimasen-kondom-delay-i8332292229-s14750498344.html",
     "title": "Sumimasen Delay",
     "description": "Gives a sensation of long-lasting pleasure",
-    "url": "/delay-box.svg"
+    "url": "https://pamfuuctmarnncksxvym.supabase.co/storage/v1/object/public/product-images/delay-box.svg"
   },
   "ultrasafe": {
     "tokopedia": "https://tk.tokopedia.com/ZSP4ssFLk/",
@@ -37,6 +37,6 @@
     "lazada": "https://www.lazada.co.id/products/pdp-i8793788768-s16237678717.html",
     "title": "Sumimasen Ultra Safe",
     "description": "Extra protection of pleasure",
-    "url": "/ultrasafe.svg"
+    "url": "https://pamfuuctmarnncksxvym.supabase.co/storage/v1/object/public/product-images/ultrasafe.svg"
   }
 }

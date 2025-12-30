@@ -4,16 +4,23 @@ import Autoplay from "embla-carousel-autoplay";
 import useEmblaCarousel from "embla-carousel-react";
 import { useCallback } from "react";
 
-import coolBox from "@/public/cool-box.svg";
-import delayBox from "@/public/delay-box.svg";
-import dottedBox from "@/public/dotted-box.svg";
-import ultrathinBox from "@/public/ultrathin.svg";
-import ultrasafe from "@/public/ultra_safe-cropped.svg";
 import Image from "next/image";
 import Modal from "./Modal";
 
 export default function EmblaCarousel({ children }) {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay()]);
+
+  //image url
+  const coolBox =
+    "https://pamfuuctmarnncksxvym.supabase.co/storage/v1/object/public/product-images/cool-box.svg";
+  const delayBox =
+    "https://pamfuuctmarnncksxvym.supabase.co/storage/v1/object/public/product-images/delay-box.svg";
+  const dottedBox =
+    "https://pamfuuctmarnncksxvym.supabase.co/storage/v1/object/public/product-images/dotted-box.svg";
+  const ultrathinBox =
+    "https://pamfuuctmarnncksxvym.supabase.co/storage/v1/object/public/product-images/ultrathin.svg";
+  const ultrasafe =
+    "https://pamfuuctmarnncksxvym.supabase.co/storage/v1/object/public/product-images/ultrasafe.svg";
 
   const scrollPrev = useCallback(() => {
     if (emblaApi) emblaApi.scrollPrev();
@@ -33,9 +40,11 @@ export default function EmblaCarousel({ children }) {
               <Modal variant="ultrasafe">
                 <Image
                   src={ultrasafe}
+                  width={400}
+                  height={400}
                   priority
                   alt="ultra safe"
-                  className="ml-8 mt-10 scale-125"
+                  className="ml-4 mt-10 scale-125"
                 />
               </Modal>
             </div>
@@ -44,6 +53,8 @@ export default function EmblaCarousel({ children }) {
               <Modal variant="ultrathin">
                 <Image
                   src={ultrathinBox}
+                  width={400}
+                  height={400}
                   priority
                   alt="ultra thin box"
                   className="h-full"
@@ -55,6 +66,8 @@ export default function EmblaCarousel({ children }) {
               <Modal variant="delay">
                 <Image
                   src={delayBox}
+                  width={400}
+                  height={400}
                   priority
                   alt="delay box"
                   className="h-full"
@@ -65,6 +78,8 @@ export default function EmblaCarousel({ children }) {
               <Modal variant="cool">
                 <Image
                   src={coolBox}
+                  width={400}
+                  height={400}
                   priority
                   alt="cool box"
                   className="h-full"
@@ -75,6 +90,8 @@ export default function EmblaCarousel({ children }) {
               <Modal variant="dotted">
                 <Image
                   src={dottedBox}
+                  width={400}
+                  height={400}
                   priority
                   alt="dotted box"
                   className="h-full"
