@@ -28,7 +28,7 @@ export default function Partner() {
               className="mx-auto h-auto rounded-lg"
             />
           </Link>
-          <Link href="https://favo.id/">
+          <Link href="https://favo.id/collections/sumimasen">
             <Image
               src={favoLogo}
               alt="Favo"
