@@ -1,38 +1,15 @@
-# Sumimasen 2025 🇯🇵
+# sumimasen.id | Official Brand Website 🛡️
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Year](https://img.shields.io/badge/Year-2025-blue.svg)](#)
+[![Next.js 16](https://img.shields.io/badge/Framework-Next.js%2016-black?logo=next.js)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/Language-TypeScript-blue?logo=typescript)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Styling-Tailwind%20CSS-38B2AC?logo=tailwind-css)](https://tailwindcss.com/)
 
-> [One sentence pitch: e.g., A minimalist language assistant designed for respectful communication in Japan.]
-
-## 📖 Overview
-
-**Sumimasen 2025** is a [web/mobile/cli] application built to [primary goal, e.g., help travelers navigate social etiquette and basic Japanese phrases]. The project focuses on the nuance of "Sumimasen"—a word that bridges apology, gratitude, and inquiry.
-
-### Key Features
-
-- **✨ Feature 1:** [e.g., Real-time phrase translation with context-aware politeness levels.]
-- **✨ Feature 2:** [e.g., Interactive map of 2025 cultural events in Japan.]
-- **✨ Feature 3:** [e.g., Lightweight, offline-first performance for travelers.]
+The official digital home for **Sumimasen**, a premium sexual wellness brand. This repository contains the frontend and brand experience for sumimasen.id, designed to provide a discreet, high-performance, and secure shopping experience.
 
 ## 🛠 Tech Stack
 
-- **Frontend:** [React / Vue / Next.js]
-- **Backend:** [Node.js / Python / Go]
-- **Database:** [PostgreSQL / MongoDB / Supabase]
-- **Deployment:** [Vercel / Docker / AWS]
-
-## 🚀 Getting Started
-
-### Prerequisites
-
-- [Node.js v20+](https://nodejs.org/)
-- [pnpm / npm / yarn]
-
-### Installation
-
-1. **Clone the repository:**
-   ```bash
-   git clone [https://github.com/bertbrian/sumimasen-2025.git](https://github.com/bertbrian/sumimasen-2025.git)
-   cd sumimasen-2025
-   ```
+- **Core:** Next.js 16 (App Router)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS / Framer Motion (for smooth, premium animations)
+- **Icons:** Lucide React
+- **SEO:** Optimized metadata for regional (Indonesia) and international reach.
