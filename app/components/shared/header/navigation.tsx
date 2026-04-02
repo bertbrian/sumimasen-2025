@@ -68,15 +68,16 @@ export default async function Navigation() {
         </Link>
       )} */}
         {/* {!session?.user && (
+        
+      )} */}
         <Link
           href="https://wa.me/+6285179686686?text=Hai%20sumin%2C%20saya%20tertarik%20menjadi%20Reseller%2C%20apa%20saja%20syaratnya%3F%3F"
           target="_blank"
           rel="noopener noreferrer"
-          className="me-2 w-48 rounded-full bg-gradient-to-r from-green-400 via-green-500 to-green-600 px-5 py-2.5 text-center text-sm font-medium text-white shadow-lg shadow-green-500/50 hover:bg-gradient-to-l focus:outline-none focus:ring-4 focus:ring-green-300"
+          className="me-2 w-48 rounded-full bg-gradient-to-r from-green-400 via-green-500 to-green-600 px-5 py-2.5 text-center text-sm font-medium text-white shadow-lg shadow-green-500/50 hover:bg-gradient-to-l focus:ring-4 focus:ring-green-300 focus:outline-none"
         >
           Open Reseller
         </Link>
-      )} */}
       </div>
       <nav className="md:hidden">
         <Sheet>
