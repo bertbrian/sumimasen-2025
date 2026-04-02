@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Sumimasen 2025 🇯🇵
 
-## Getting Started
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Year](https://img.shields.io/badge/Year-2025-blue.svg)](#)
 
-First, run the development server:
+> [One sentence pitch: e.g., A minimalist language assistant designed for respectful communication in Japan.]
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 📖 Overview
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**Sumimasen 2025** is a [web/mobile/cli] application built to [primary goal, e.g., help travelers navigate social etiquette and basic Japanese phrases]. The project focuses on the nuance of "Sumimasen"—a word that bridges apology, gratitude, and inquiry.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Key Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **✨ Feature 1:** [e.g., Real-time phrase translation with context-aware politeness levels.]
+- **✨ Feature 2:** [e.g., Interactive map of 2025 cultural events in Japan.]
+- **✨ Feature 3:** [e.g., Lightweight, offline-first performance for travelers.]
 
-## Learn More
+## 🛠 Tech Stack
 
-To learn more about Next.js, take a look at the following resources:
+- **Frontend:** [React / Vue / Next.js]
+- **Backend:** [Node.js / Python / Go]
+- **Database:** [PostgreSQL / MongoDB / Supabase]
+- **Deployment:** [Vercel / Docker / AWS]
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🚀 Getting Started
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Prerequisites
 
-## Deploy on Vercel
+- [Node.js v20+](https://nodejs.org/)
+- [pnpm / npm / yarn]
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Installation
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/bertbrian/sumimasen-2025.git](https://github.com/bertbrian/sumimasen-2025.git)
+   cd sumimasen-2025
+   ```
