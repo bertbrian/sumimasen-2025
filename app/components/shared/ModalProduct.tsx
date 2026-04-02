@@ -10,7 +10,14 @@ export default function ModalProduct({ variant }: { variant: Variant }) {
     <>
       {/* Pre load images */}
       {Object.values(productLinks).map((item) => (
-        <img key={item.url} src={item.url} alt="" className="hidden" />
+        <Image
+          key={item.url}
+          src={item.url}
+          alt=""
+          className="hidden"
+          height={400}
+          width={400}
+        />
       ))}
       <DialogTitle className="font-bold">
         {productLinks[variant].title} (3pcs)
