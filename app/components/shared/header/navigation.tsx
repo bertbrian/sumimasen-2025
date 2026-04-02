@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import {
   Sheet,
+  SheetClose,
   SheetContent,
   SheetDescription,
   SheetTitle,
@@ -84,7 +85,7 @@ export default async function Navigation() {
           <SheetTrigger className="align-middle">
             <EllipsisVertical />
           </SheetTrigger>
-          <SheetContent className="w-xs gap-2 space-y-2">
+          <SheetContent className="w-xs gap-2">
             <SheetTitle className="p-4">{/* <ModeToggle /> */}</SheetTitle>
             {/* <Button asChild variant="ghost">
               <Link href="about">About</Link>
@@ -92,15 +93,30 @@ export default async function Navigation() {
             <Button asChild variant="ghost">
               <Link href="contact">Contact</Link>
             </Button> */}
-            <Button asChild variant="ghost">
-              <Link href="aboutus">About Us</Link>
-            </Button>
-            <Button asChild variant="ghost">
-              <Link href="certification">Certification</Link>
-            </Button>
-            <Button asChild variant="ghost">
-              <Link href="funwalk">Fun Walk</Link>
-            </Button>
+            <SheetClose
+              asChild
+              className="py-8 text-[1rem] hover:text-purple-600"
+            >
+              <Button asChild variant="ghost">
+                <Link href="aboutus">About Us</Link>
+              </Button>
+            </SheetClose>
+            <SheetClose
+              asChild
+              className="py-8 text-[1rem] hover:text-purple-600"
+            >
+              <Button asChild variant="ghost">
+                <Link href="certification">Certification</Link>
+              </Button>
+            </SheetClose>
+            <SheetClose
+              asChild
+              className="py-8 text-[1rem] hover:text-purple-600"
+            >
+              <Button asChild variant="ghost">
+                <Link href="funwalk">Fun Walk</Link>
+              </Button>
+            </SheetClose>
             {/* <UserButton /> */}
             <SheetDescription></SheetDescription>
           </SheetContent>
